@@ -39,4 +39,8 @@ public final class Constants {
     public static final int REPORT_SUCCESSFULLY_LOADED = 5;
     public static final int REPORT_UNSUCCESSFULLY_LOADED = 6;
 
+    public static final int GRAPHICS_PIE_INC_SUCCESSFULLY_LOADED = 7;
+    public static final int GRAPHICS_PIE_INC_UNCCESSFULLY_LOADED = 8;
+    public static final int GRAPHICS_PIE_EXP_SUCCESSFULLY_LOADED = 9;
+    public static final int GRAPHICS_PIE_EXP_UNCCESSFULLY_LOADED = 10;
 }
