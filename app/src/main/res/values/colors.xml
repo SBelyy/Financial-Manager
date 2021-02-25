@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#6200EE</color>
+    <color name="colorAccent222">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlack95">#95000000</color>
+    <color name="colorBlack60">#69000000</color>
+    <color name="colorBackground">#edeef0</color>
+    <color name="colorPrimary10">#106200EE</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorRed">#F44336</color>
+
+    <color name="graphics1">#fe0000</color>
+    <color name="graphics2">#f500a6</color>
+    <color name="graphics3">#e200e0</color>
+    <color name="graphics4">#8200ff</color>
+    <color name="graphics5">#0e00db</color>
+    <color name="graphics6">#00a9ac</color>
+    <color name="graphics7">#00d000</color>
+    <color name="graphics8">#6dff00</color>
+    <color name="graphics9">#fffb01</color>
+    <color name="graphics10">#ffd001</color>
+    <color name="graphics11">#ff8e01</color>
+    <color name="graphics12">#ff5d00</color>
+
+    <color name="graphics13">#ff8182</color>
+    <color name="graphics14">#ff81d5</color>
+    <color name="graphics15">#c981ff</color>
+    <color name="graphics16">#8e81ed</color>
+    <color name="graphics17">#3cd4d7</color>
+    <color name="graphics18">#27e87b</color>
+    <color name="graphics19">#c0ff78</color>
+    <color name="graphics20">#ffe97c</color>
+    <color name="graphics21">#ffc87d</color>
+    <color name="graphics22">#ffaf80</color>
+
+</resources>

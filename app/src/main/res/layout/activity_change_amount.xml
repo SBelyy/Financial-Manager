@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".activity.ChangeAmountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        android:background="@drawable/white_style"
+        android:elevation="2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/layoutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/roboto_thin"
+            android:textSize="@dimen/activity_text_size"
+            android:text="@string/choose_refill"
+            />
+
+        <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="2dp"
+                android:scrollbars="none"
+                android:layout_marginHorizontal="10dp">
+
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:background="@color/colorBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:onClick="setDate"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:textSize="@dimen/activity_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/roboto_thin"
+                    android:text="@string/data"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:text="data_and_time_text"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/ic_expand_more_black_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="setTime"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/activity_text_size"
+                    android:textColor="@color/colorBlack"
+                    android:fontFamily="@font/roboto_thin"
+                    android:text="@string/time"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="19sp"
+                        android:layout_marginTop="1dp"
+                        android:text="data_and_time_text"
+                    />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/ic_expand_more_black_24dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:background="@color/colorBackground"/>
+
+
+        <EditText
+            android:id="@+id/enterSum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/colorBackground"
+            android:maxLength="12"
+            android:hint="@string/enter_sum"
+            android:fontFamily="@font/roboto_thin"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@color/colorBlack"
+            android:textColorLink="@color/colorBlack" />
+
+        <EditText
+            android:id="@+id/enterComment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/roboto_thin"
+            android:backgroundTint="@color/colorBackground"
+            android:maxLength="120"
+            android:hint="@string/comment"
+            android:textCursorDrawable="@color/colorBlack"
+            android:textColorLink="@color/colorBlack" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="donePress"
+            android:background="@drawable/button_done"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

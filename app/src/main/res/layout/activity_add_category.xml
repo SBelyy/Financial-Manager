@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    tools:context=".activity.AddCategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="2dp"
+        android:background="@drawable/white_style"
+        android:layout_marginVertical="@dimen/activity_vertical_margin"
+        android:layout_marginHorizontal="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_text_size"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:text="@string/enter_name_category"/>
+
+        <EditText
+            android:id="@+id/nameCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginVertical="@dimen/activity_horizontal_margin"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:backgroundTint="@color/colorBlack95"
+            android:textColorLink="@color/colorBlack"
+            android:textCursorDrawable="@color/colorBlack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/activity_text_size"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:text="@string/choose_icon_category"/>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp"
+            android:onClick="addCategory"
+            android:src="@drawable/button_done"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+    </LinearLayout>
+</ScrollView>

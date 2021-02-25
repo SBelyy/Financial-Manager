@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:id="@+id/refill_income">
+
+    <ImageView
+        android:id="@+id/icon_refill_costs"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_child_friendly"/>
+
+    <TextView
+        android:id="@+id/name_refill_costs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_thin"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/activity_text_size"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:text="@string/child"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/sum_refill_costs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="@font/roboto_thin"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/activity_text_size"
+                android:text="560"/>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/activity_text_size"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="4dp"
+            android:text="BYN"/>
+
+</LinearLayout>
