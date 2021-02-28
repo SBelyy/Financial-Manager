@@ -144,4 +144,8 @@
     <string name="income">Доходы:</string>
     <string name="report">Выписка:</string>
     <string name="no_graphics">Нет данных для анализа.</string>
+    <string name="dynamics_income">Динамика доходов:</string>
+    <string name="dynamics_expense">Динамика расходов:</string>
+    <string name="sum_incorrect">Ошибка, сумма введена неверно</string>
+    <string name="percentage">Процентное соотношение по категориям:</string>
 </resources>

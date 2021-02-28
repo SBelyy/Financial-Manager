@@ -12,9 +12,24 @@
         android:background="@color/colorBackground"
         android:id="@+id/graphics_layout">
 
+        <ProgressBar
+            android:id="@+id/progress_graphics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/activity_text_size"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:text="@string/percentage"/>
+
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/pie_chart_income"
-            android:layout_marginVertical="@dimen/activity_vertical_margin"
             android:layout_width="match_parent"
             android:layout_height="400dp" />
 
@@ -23,6 +38,36 @@
             android:layout_marginVertical="@dimen/activity_vertical_margin"
             android:layout_width="match_parent"
             android:layout_height="400dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/activity_text_size"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:text="@string/dynamics_income"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart_income"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_thin"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/activity_text_size"
+            android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+            android:text="@string/dynamics_expense"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart_expense"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginVertical="@dimen/activity_horizontal_margin"/>
 
     </LinearLayout>
 

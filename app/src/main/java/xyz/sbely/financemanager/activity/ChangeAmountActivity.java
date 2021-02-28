@@ -14,6 +14,7 @@ import android.text.format.DateUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -214,12 +215,14 @@ public class ChangeAmountActivity extends AppCompatActivity {
 
             String date = "" + dateAndTime.getTimeInMillis();
             String source = enableCategoryLayout.getName();
+            String comment = editComments.getText().toString();
+
             dbManager.insertToDb(type, source, date,
-                editSum.getText().toString(), editComments.getText().toString(), enableCategoryLayout.getIdImage());
+                editSum.getText().toString(), comment, enableCategoryLayout.getIdImage());
 
             goBack();
         }catch (Exception ign){
-            System.out.println(ign.getMessage());
+            Toast.makeText(this, getString(R.string.sum_incorrect), Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -12,6 +12,7 @@ import java.util.List;
 
 import xyz.sbely.financemanager.layout.CategoryLayout;
 import xyz.sbely.financemanager.model.Debt;
+import xyz.sbely.financemanager.model.GraphPoint;
 import xyz.sbely.financemanager.model.Report;
 
 public class MyDBManager {
@@ -167,6 +168,29 @@ public class MyDBManager {
         cursor.close();
 
         return newCategoryLayout;
+    }
+
+    public synchronized List<GraphPoint> getPointForType(String type){
+        List<GraphPoint> points = new ArrayList<>();
+
+        Cursor cursor = db.query(MyDBConstants.TABLE_NAME, new String[]{MyDBConstants.TYPE, MyDBConstants.SUM, MyDBConstants.DATE}, null,
+                null, null, null, MyDBConstants.DATE);
+
+        if(cursor.moveToFirst())
+            do{
+                String st = cursor.getString(cursor.getColumnIndex(MyDBConstants.TYPE));
+
+                if(st.equals(type)){
+                    float sum = Float.parseFloat(cursor.getString(cursor.getColumnIndex(MyDBConstants.SUM)));
+                    long date = Long.parseLong(cursor.getString(cursor.getColumnIndex(MyDBConstants.DATE)));
+                    int dateInDay = (int) (date / (24 * 60 * 60 * 1000));
+                    points.add(new GraphPoint(sum, dateInDay));
+                }
+            }while (cursor.moveToNext());
+
+        cursor.close();
+
+        return points;
     }
 
     public String[] getSumFromDb(){
